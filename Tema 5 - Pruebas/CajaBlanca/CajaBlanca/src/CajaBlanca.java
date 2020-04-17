@@ -17,6 +17,9 @@ public class CajaBlanca {
     
     public static void main(String[] args) {
        
+        ej3(-123);
+        System.out.println("_____________________");
+        ej3(4);
             
     }
     
