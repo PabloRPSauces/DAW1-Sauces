@@ -33,19 +33,20 @@ public class Depurador {
     }
     
     public static void ej2(){
-        Scanner sc=new Scanner(System.in);
-        int num, positivos = 0, negativos = 0;
-        do {
-            System.out.println("Introduce un número (0 para acabar):");
-            num = sc.nextInt();
-            if (num < 0) {
-                negativos++;
-            } else if (num > 0) {
-                positivos++;
-            }
-        } while (num != 0);
-        System.out.println(positivos + " números positivos y "
-                + negativos + " números negativos");
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Introduce el tamaño del array");
+       int tamano=sc.nextInt();
+       int[] miArray=new int[tamano];
+       encontrarMax(miArray);
+       
+    }
+    
+    public static void encontrarMax(int[] array){
+        int max=array[1];
+        for(int i=1;i<array.length;i++){
+            if(array[i]>max) max=array[i];
+        }
+        System.out.println("El valor máximo es " + max);
     }
     
     public static void ej3(){
