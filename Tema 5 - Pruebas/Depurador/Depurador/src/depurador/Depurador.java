@@ -18,6 +18,7 @@ public class Depurador {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
     }
     
     public static void ej1(){
@@ -80,6 +81,23 @@ public class Depurador {
                 System.out.println();
             }
         }
+    }
+    
+    public static void ej5(){
+        Scanner sc=new Scanner(System.in);
+        int num;
+        int positivos=0,negativos=0;
+        do{
+            System.out.println("Introduce un número (0 para salir)");
+            num=sc.nextInt();
+            if(num>0){
+                positivos++;
+            }
+            else if(num<0){
+                negativos++;
+            }
+        }while(num!=0);
+        System.out.println("Has metido "+positivos+" números positivos y "+negativos+" números negativos");
     }
     
 }
