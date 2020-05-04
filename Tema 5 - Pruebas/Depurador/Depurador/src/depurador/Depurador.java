@@ -18,7 +18,7 @@ public class Depurador {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
+        ej5();
     }
     
     public static void ej1(){
@@ -43,6 +43,8 @@ public class Depurador {
     }
     
     public static void encontrarMax(int[] array){
+        String a,b,c;
+        boolean ad;
         int max=array[1];
         for(int i=1;i<array.length;i++){
             if(array[i]>max) max=array[i];
@@ -58,12 +60,12 @@ public class Depurador {
             System.out.print("Introduce un número (0 para acabar): ");
             num = sc.nextInt();
             if (num != 0) {
-                total += num;
+                total = total + num;
                 cuantos++;
             }
         } while (num != 0);
         media = (double) total / cuantos;
-        System.out.println("Total: " + cuantos + " Media: " + media);
+        System.out.println("Total: " + total + " Media: " + media);
     }
     
     public static void ej4(){
